@@ -9,17 +9,18 @@ import FoodDetail from "./components/FoodDetail";
 
 export default function App() {
   const [foodData, setFoodData] = useState([]);
+  const [foodId, setFoodId] = useState("");
   return (
     <div>
       <Nav />
       <Search foodData={foodData} setFoodData={setFoodData} />
       <Container>
         <InnerContainer>
-          <Foodlist foodData={foodData} />
+          <Foodlist setFoodId ={setFoodId} foodData={foodData} />
         </InnerContainer>
 
         <InnerContainer>
-          <FoodDetail foodData={foodData} />
+          <FoodDetail foodId={foodId} foodData={foodData} />
         </InnerContainer>
       </Container>
     </div>
