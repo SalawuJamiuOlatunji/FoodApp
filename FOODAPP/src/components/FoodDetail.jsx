@@ -15,9 +15,17 @@ export default function FoodDetail({ foodData, foodId }) {
   }, [foodId]);
   return (
     <div>
-      FoodDetail{foodId}
-      {food.title}
-      <img src={food.image} />
+      <div>
+        <h1>{food.title}</h1>
+
+        <img src={food.image} />
+      </div>
+      <span>
+        <strong> {food.readyInMinutes}Minutes</strong>
+      </span>
+      <span>
+        vegetarian:{food.vegetarian ? "vegeterian" : "Non-vegeterian"}
+      </span>
     </div>
   );
 }
