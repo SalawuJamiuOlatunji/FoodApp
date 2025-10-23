@@ -9,7 +9,7 @@ export default function Fooditem({ food, setFoodId }) {
       <div className={styles.buttonContainer}>
         <button
           onClick={() => {
-            console.log(food.id);
+            console.log(food.id, food.title);
             setFoodId(food.id);
           }}
           className={styles.itemButton}

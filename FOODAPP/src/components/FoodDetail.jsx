@@ -6,7 +6,7 @@ export default function FoodDetail({ foodData, foodId }) {
   const API_KEY = "1a4aed8935724601bdda20077ae5ef00";
   useEffect(() => {
     async function fetchFood() {
-      const res = await fetch(`${URL}?apikey=${API_KEY}`);
+      const res = await fetch(`${URL}?apiKey=${API_KEY}`);
       const data = await res.json();
       console.log(data);
       setFood(data);
