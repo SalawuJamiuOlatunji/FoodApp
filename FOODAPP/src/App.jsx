@@ -16,7 +16,7 @@ export default function App() {
       <Search foodData={foodData} setFoodData={setFoodData} />
       <Container>
         <InnerContainer>
-          <Foodlist setFoodId ={setFoodId} foodData={foodData} />
+          <Foodlist setFoodId={setFoodId} foodData={foodData} />
         </InnerContainer>
 
         <InnerContainer>
