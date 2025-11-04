@@ -19,10 +19,10 @@ export default function FoodDetail({ foodData, foodId }) {
   return (
     <div>
       <div className={styles.renderCard}>
-        <h1>{food.title}</h1>
+        <h1 className={styles.recipeName}>{food.title}</h1>
 
-        <img src={food.image} />
-        <div>
+        <img className={styles.recipeImage} src={food.image} />
+        <div className={styles.recipeDetails}>
           <span>
             <strong>⏰ {food.readyInMinutes}Minutes </strong>
           </span>
@@ -30,16 +30,23 @@ export default function FoodDetail({ foodData, foodId }) {
             👪<strong> Serves:{food.servings}</strong>
           </span>
           <span>
-            vegetarian:{food.vegetarian ? "🥦 vegeterian" : "🍗 Non-vegeterian"}
+            <strong>
+              vegetarian:
+              {food.vegetarian ? "🥦 vegeterian" : "🍗 Non-vegeterian"}
+            </strong>
           </span>
-          <span> Vegan:{food.vegan ? " 🐮vegan" : " "}</span>
+          <span>
+            <strong> Vegan:{food.vegan ? " 🐮vegan" : " "}</strong>
+          </span>
         </div>
         <div>
-          <span>${food.pricePerServing / 100} Per serving</span>
+          <span>
+            <strong>${food.pricePerServing / 100} Per serving</strong>
+          </span>
         </div>
 
         <h2>Instructions</h2>
-        <div>
+        <div className={styles.recipeInstructions}>
           <ol>
             {isLoading ? (
               <p>Loading....</p>
