@@ -2,8 +2,8 @@ import styles from "./Item.module.css";
 export default function Item({ item }) {
   return (
     <div>
-      <div className={Styles.itemContainer}>
-        <div className={Styles.imageContainer}>
+      <div className={styles.itemContainer}>
+        <div className={styles.imageContainer}>
           <img
             className={styles.image}
             src={
