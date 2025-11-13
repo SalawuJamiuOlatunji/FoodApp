@@ -1,4 +1,4 @@
-import Item from "./Item";
+import Item from "./item";
 export default function ItemList({ food, isLoading }) {
   return (
     <div>

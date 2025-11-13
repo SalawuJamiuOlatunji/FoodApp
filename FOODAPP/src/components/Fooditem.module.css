@@ -1,4 +1,5 @@
 .itemContainer {
+  background-color: #ff7f50;
   width: 300px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -20,7 +21,7 @@
   columns: #393e64;
 }
 .itemButton {
-  background-color: #29bb89;
+  background-color: #1e90ff;
   border: none;
   color: white;
   padding: 10px;
