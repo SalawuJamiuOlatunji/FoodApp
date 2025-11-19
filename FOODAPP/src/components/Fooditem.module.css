@@ -7,6 +7,13 @@
   overflow: hidden;
   font-family: polysans, sans-serif;
 }
+@media (max-width: 600px) {
+  .itemContainer {
+    background: red;
+    max-width: 270px;
+    margin: 10px;
+  }
+}
 .itemImage {
   max-width: 100%;
   height: auto;
