@@ -1,5 +1,6 @@
-.nav {
+/* .nav {
   font-size: 2em;
+  width: 100%;
   background-color: #00bfff;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -9,9 +10,39 @@
 }
 @media (max-width: 600px) {
   .nav {
+    width: 100%;
     background: red;
     width: inherit;
     color: white;
     margin: auto;
+  }
+} */
+
+.nav {
+  font-size: 2em;
+  width: 100%;
+  background-color: #00bfff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #393e46;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .nav {
+    font-size: 1.8em;
+    padding: 25px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .nav {
+    font-size: 1.4em;
+    padding: 20px;
+    color: white;
   }
 }

@@ -1,5 +1,28 @@
+/* .InnerContainer {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+} */
+
 .InnerContainer {
   flex: 1;
   padding: 10px;
   margin: 10px;
+  min-width: 300px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .InnerContainer {
+    margin: 8px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .InnerContainer {
+    margin: 5px;
+    padding: 5px;
+    width: 95%;
+  }
 }
