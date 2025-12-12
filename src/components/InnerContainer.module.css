@@ -22,7 +22,7 @@
 /* Mobile */
 @media (max-width: 600px) {
   .InnerContainer {
-    margin: 5px;
+    margin: 3px;
     padding: 5px;
     width: 50% !important;
     min-width: 50% !important;

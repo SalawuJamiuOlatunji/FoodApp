@@ -21,8 +21,9 @@
 @media (max-width: 600px) {
   .parentContainer {
     flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: nowrap;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     /* border: 2px solid red; */
     width: 100%;
   }

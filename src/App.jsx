@@ -19,6 +19,7 @@ export default function App() {
       }}
     >
       <Nav />
+      <Button setBg={setBg} />
       <Search foodData={foodData} setFoodData={setFoodData} />
       <Container>
         <InnerContainer>
@@ -28,7 +29,6 @@ export default function App() {
         <InnerContainer>
           <FoodDetail foodId={foodId} foodData={foodData} />
         </InnerContainer>
-        <Button setBg={setBg} />
       </Container>
     </div>
   );
