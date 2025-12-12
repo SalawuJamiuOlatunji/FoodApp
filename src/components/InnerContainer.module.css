@@ -8,7 +8,8 @@
   flex: 1;
   padding: 10px;
   margin: 10px;
-  min-width: 300px;
+  /* width: 50%; */
+  min-width: 0 !important;
 }
 
 /* Tablet */
@@ -23,6 +24,8 @@
   .InnerContainer {
     margin: 5px;
     padding: 5px;
-    width: 95%;
+    width: 50% !important;
+    min-width: 50% !important;
+    /* border: 3px solid green; */
   }
 }

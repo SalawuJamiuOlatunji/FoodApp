@@ -16,7 +16,6 @@ export default function App() {
     <div
       style={{
         backgroundColor: bg,
-        border: "1px solid red",
       }}
     >
       <Nav />
@@ -29,7 +28,7 @@ export default function App() {
         <InnerContainer>
           <FoodDetail foodId={foodId} foodData={foodData} />
         </InnerContainer>
-        <Button setBg={setBg} />
+        {/* <Button setBg={setBg} /> */}
       </Container>
     </div>
   );

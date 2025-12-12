@@ -4,6 +4,7 @@
 
 .parentContainer {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -12,14 +13,20 @@
 @media (max-width: 1024px) {
   .parentContainer {
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 }
 
 /* Mobile */
 @media (max-width: 600px) {
   .parentContainer {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* border: 2px solid red; */
+    width: 100%;
+  }
+  .parentContainer > div {
+    min-width: 50%; /* each takes half screen */
   }
 }
