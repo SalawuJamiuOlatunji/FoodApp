@@ -28,7 +28,7 @@ export default function App() {
         <InnerContainer>
           <FoodDetail foodId={foodId} foodData={foodData} />
         </InnerContainer>
-        {/* <Button setBg={setBg} /> */}
+        <Button setBg={setBg} />
       </Container>
     </div>
   );

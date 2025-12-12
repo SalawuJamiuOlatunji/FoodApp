@@ -8,6 +8,7 @@ export default function Button({ setBg }) {
     width: "40px",
     padding: "0",
     fontSize: "30px",
+    border: "none",
     borderRadius: "50px",
   };
   return (
