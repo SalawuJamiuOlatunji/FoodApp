@@ -8,6 +8,7 @@ import InnerContainer from "./components/InnerContainer";
 import FoodDetail from "./components/FoodDetail";
 import Button from "./components/Button";
 import SearchAndButton from "./components/SearchAndButton";
+import TopButton from "./components/TopButton";
 
 export default function App() {
   const [foodData, setFoodData] = useState([]);
@@ -32,6 +33,7 @@ export default function App() {
 
         <InnerContainer>
           <FoodDetail foodId={foodId} foodData={foodData} />
+          <TopButton />
         </InnerContainer>
       </Container>
     </div>
