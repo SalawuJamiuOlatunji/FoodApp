@@ -1,0 +1,16 @@
+.Button {
+  color: black;
+  background-color: #00bfff;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  font-size: 30px;
+  border: none;
+  border-radius: 50px;
+}
+
+@media (max-width: 600px) {
+  .Button {
+    margin-right: 5px !important;
+  }
+}

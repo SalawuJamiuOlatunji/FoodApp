@@ -7,6 +7,7 @@ import Container from "./components/Container";
 import InnerContainer from "./components/InnerContainer";
 import FoodDetail from "./components/FoodDetail";
 import Button from "./components/Button";
+import SearchAndButton from "./components/SearchAndButton";
 
 export default function App() {
   const [foodData, setFoodData] = useState([]);
@@ -19,8 +20,11 @@ export default function App() {
       }}
     >
       <Nav />
-      <Button setBg={setBg} />
-      <Search foodData={foodData} setFoodData={setFoodData} />
+      <SearchAndButton>
+        <Button setBg={setBg} />
+        <Search foodData={foodData} setFoodData={setFoodData} />
+      </SearchAndButton>
+
       <Container>
         <InnerContainer>
           <Foodlist setFoodId={setFoodId} foodData={foodData} />

@@ -1,19 +1,10 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
+import styles from "./Button.module.css";
 
 export default function Button({ setBg }) {
-  const myStyle = {
-    color: "black",
-    backgroundColor: "#00bfff",
-    height: "40px",
-    width: "40px",
-    padding: "0",
-    fontSize: "30px",
-    border: "none",
-    borderRadius: "50px",
-  };
   return (
     <div>
-      <button style={myStyle} onClick={() => setBg("black")}>
+      <button className={styles.Button} onClick={() => setBg("black")}>
         <i class="bi bi-moon-fill"></i>
       </button>
     </div>
