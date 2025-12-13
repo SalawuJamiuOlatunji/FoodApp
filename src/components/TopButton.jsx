@@ -26,7 +26,7 @@ export default function TopButton() {
 
   return (
     showButton && (
-      <button className={styles.scrollButton} onClick={scrollToTop}>
+      <button className={styles.TopButton} onClick={scrollToTop}>
         ⬆
       </button>
     )
